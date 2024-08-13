@@ -36,7 +36,7 @@ def name():
     st.write(inname)
     if inname:
         #st.write(inname)
-        encode(inname)
+        encoded=encode(inname)
         st.write(encoded)
 
 
