@@ -38,9 +38,9 @@ def name():
         #st.write(inname)
         encoded=encode(inname)
         if encoded!="hyunnn":
-            st.text("Your Name Is",encoded,"Right? Hmm...")
+            st.write("Your Name Is",encoded,"Right? Hmm...")
         elif encoded=="hyunnn":
-            st.text("Hello hyunnn! First Key Is 'K'")
+            st.write("Hello hyunnn! First Key Is 'K'")
 
 
 
