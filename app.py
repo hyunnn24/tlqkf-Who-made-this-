@@ -33,11 +33,15 @@ def name():
     st.title("Hi :raised_hands: Nice To Meet You Whats Your Name?")
     
     inname=st.text_input("NAME:")
-    st.write(inname)
+    #st.write(inname)
     if inname:
         #st.write(inname)
         encoded=encode(inname)
-        st.write(encoded)
+        if encoded!=hyunnn:
+            st.write("Your Name Is",encoded,"Right? Hmm...")
+        elif encoded==hyunnn:
+            st.write("Hello hyunnn! First Key Is 'K'")
+
 
 
 def phone():
