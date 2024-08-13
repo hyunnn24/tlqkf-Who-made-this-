@@ -52,18 +52,23 @@ def phone():
 def birth():
     st.title("Let's Have a Party On Your Birthday! :partying_face:") 
 
+if "age_ran" not in st.session_state:
+    st.session_state.age_ran = random.randint(1, 100)
+
 def age():
     st.title("How Old Are You? :smile:")
     st.write("let me guess...")
-    age_ran = random.randint(1, 100) 
-    st.write(age_ran,"?") 
+    st.write(st.session_state.age_ran, "?") 
+
     if st.button("NO"):
-        continue
+        st.session_state.age_ran = random.randint(1, 100)  # 새로운 랜덤 나이를 생성
+
     if st.button("YES"):
-        if age_ran==20:
-            st.write("Oh Thanks for letting me know Second Key is I")
+        if st.session_state.age_ran == 20:
+            st.write("Oh Thanks for letting me know. The second key is 'I'")
         else:
-            st.write("hmm.... Isn't that a lie?")
+            st.write("Hmm... Isn't that a lie?")
+            
 def VOLUME():
     st.title("Is This Enough For The Volume? :loud_sound:")
 
