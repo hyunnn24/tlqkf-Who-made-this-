@@ -1,6 +1,6 @@
 import streamlit as st
 
-page = st.sidebar.selectbox("GET THE KING", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE"])
+page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE"])
 
 if page == "PHONE NUMBER":
     phone()
@@ -12,7 +12,7 @@ elif page == "MAIN":
     main()
 
 def main():
-    st.write("Hello, World")
+    st.title("Hello, World")
 def phone():
 
 def birth():
