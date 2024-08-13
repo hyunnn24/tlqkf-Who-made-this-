@@ -2,9 +2,10 @@ import streamlit as st
 import codecs
 
 def encode(inname):
-    st.write("works well")
+    #st.write("works well")  # for test
     encode= codecs.encode(inname,"rot_13")
-    st.write(encode)
+    return encode
+
 def main():
     st.header("Hello, World! :sunglasses:")
     st.header("This was made to make you :red[Annoy]")
@@ -34,8 +35,8 @@ def name():
     inname=st.text_input("NAME:")
     st.write(inname)
     if inname:
-        st.write(inname)
-        encoded=encode(inname)
+        #st.write(inname)
+        encode(inname)
         st.write(encoded)
 
 
