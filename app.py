@@ -14,6 +14,13 @@ def birth():
 def age():
     st.write("Age Page")  # Placeholder content
 
+def VOLUME():
+    st.write(" volume page")
+
+
+
+
+
 page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE"])
 st.sidebar.text("  made by hyunnn \n  CERT-IS PKNU \n  2024.08.13")
 
@@ -25,3 +32,5 @@ elif page == "AGE":
     age()
 elif page == "MAIN":
     main()
+elif page == "VOLUME":
+    VOLUME()
