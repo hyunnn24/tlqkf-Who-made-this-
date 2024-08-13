@@ -17,9 +17,10 @@ def age():
 
 def VOLUME():
     st.title("Is This Enough For The Volume? :loud_sound:")
+def SECRET():
+    st.title("Do You Want To Know The Secret? :lock:")
 
-
-page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE","VOLUME"])
+page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE","VOLUME","SECRET"])
 st.sidebar.text("  made by hyunnn :kr: \n  CERT-IS PKNU \n  2024.08.13")
 
 if page == "PHONE NUMBER":
@@ -32,3 +33,5 @@ elif page == "MAIN":
     main()
 elif page == "VOLUME":
     VOLUME()
+elif page == "SECRET :lock: ":
+    SECRET()
