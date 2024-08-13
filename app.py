@@ -6,7 +6,7 @@ def main():
     st.header("Enjoy it! :smile:")
     
 def phone():
-    st.title("Can I Get Your Phone Number? :laugh:") 
+    st.title("Can I Get Your Phone Number? :smile:") 
 
 def birth():
     st.write("Birth Day Page") 
