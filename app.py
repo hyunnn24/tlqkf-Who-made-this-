@@ -1,6 +1,6 @@
 import streamlit as st
 import codecs
-inname = 0
+
 def encode(inname):
     codecs.encode(inname,"rot_13")
 def main():
@@ -29,7 +29,7 @@ def INTRODUCTION():
 def name():
     st.title("Hi :raised_hands: Nice To Meet You Whats Your Name?")
     inname=st.text_input("NAME:")
-    if inname != 0:
+    if inname:
         encoded=encode(inname)
         st.write(encoded)
 
