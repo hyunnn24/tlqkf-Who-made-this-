@@ -1,8 +1,8 @@
 import streamlit as st
 
 def main():
-    st.title("Hello, World")
-    st.subtitle("This page was made to make you angry. Please enjoy it!")
+    st.header("Hello, World! :sunglasses:")
+    st.header("This page was made to make you :red[angry]  Please enjoy it!"😍)
 
 def phone():
     st.write("Phone Number Page")  # Placeholder content
