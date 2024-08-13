@@ -2,7 +2,7 @@ import streamlit as st
 
 def main():
     st.title("Hello, World")
-    st.write("This page was made to make you angry. Please enjoy it!")
+    st.subtitle("This page was made to make you angry. Please enjoy it!")
 
 def phone():
     st.write("Phone Number Page")  # Placeholder content
