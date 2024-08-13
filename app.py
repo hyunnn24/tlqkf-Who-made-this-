@@ -10,8 +10,15 @@ def INTRODUCTION():
     st.title("Hi,:hand: welcome to introduction")
     st.header("How To Play:")
     st.subheader("Just Keep Play And Get Secret Code! ")
+    st.write()
     st.subheader("In order to continue")
     st.subheader("You have to memorize this")
+    st.subheader("Hi, my name is hyunnn and I am 20 years old!")
+    st.subheader("My birthday is May 2nd, 2005(fake)")
+    st.subheader("The phone number is 010 2535 4362(fake)")
+    st.subheader("I like to listen to music at exactly 50% volume")
+    st.subheader("And My birthday is May 2nd, 2005!")
+
 def phone():
     st.title("Can I Get Your Phone Number? :iphone:") 
 
