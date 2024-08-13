@@ -4,22 +4,23 @@ def main():
     st.header("Hello, World! :sunglasses:")
     st.header("This was made to make you :red[Annoy]")
     st.header("Enjoy it! :smile:")
+    st.header(":gray[If Its Possible] :smirk:")
     
 def phone():
-    st.title("Can I Get Your Phone Number? :smile:") 
+    st.title("Can I Get Your Phone Number? :iphone:") 
 
 def birth():
-    st.title("Let's Have a Party On Your Birthday! :smile:") 
+    st.title("Let's Have a Party On Your Birthday! :partying_face:") 
 
 def age():
     st.title("How Old Are You? :smile:")  
 
 def VOLUME():
-    st.title("Is This Enough For The Volume? :smile:")
+    st.title("Is This Enough For The Volume? :loud_sound:")
 
 
 page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE","VOLUME"])
-st.sidebar.text("  made by hyunnn \n  CERT-IS PKNU \n  2024.08.13")
+st.sidebar.text("  made by hyunnn :kr: \n  CERT-IS PKNU \n  2024.08.13")
 
 if page == "PHONE NUMBER":
     phone()
