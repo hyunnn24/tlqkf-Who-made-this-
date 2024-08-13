@@ -9,13 +9,13 @@ def phone():
     st.title("Can I Get Your Phone Number? :smile:") 
 
 def birth():
-    st.write("Birth Day Page") 
+    st.title("Let's Have a Party On Your Birthday! :smile:") 
 
 def age():
-    st.write("Age Page")  
+    st.title("How Old Are You? :smile:")  
 
 def VOLUME():
-    st.write(" volume page")
+    st.title("Is This Enough For The Volume? :smile:")
 
 
 page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE","VOLUME"])
