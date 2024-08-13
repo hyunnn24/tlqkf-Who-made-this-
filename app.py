@@ -57,8 +57,13 @@ def age():
     st.write("let me guess...")
     age_ran = random.randint(1, 100) 
     st.write(age_ran,"?") 
-    st.button("NO")
-    st.button("YES")
+    if st.button("NO"):
+        continue
+    if st.button("YES"):
+        if age_ran==20:
+            st.write("Oh Thanks for letting me know Second Key is I")
+        else:
+            st.write("hmm.... Isn't that a lie?")
 def VOLUME():
     st.title("Is This Enough For The Volume? :loud_sound:")
 
