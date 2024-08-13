@@ -3,7 +3,7 @@ import codecs
 
 def encode(inname):
     #st.write("works well")  # for test
-    encode= codecs.encode(inname,"rot_15")
+    encode= codecs.encode(inname,"base64")
     return encode
 
 def main():
