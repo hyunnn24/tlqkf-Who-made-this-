@@ -2,6 +2,7 @@ import streamlit as st
 import codecs
 
 def encode(inname):
+    st.write("works well")
     codecs.encode(inname,"rot_13")
 def main():
     st.header("Hello, World! :sunglasses:")
