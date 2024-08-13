@@ -1,5 +1,8 @@
 import streamlit as st
 import codecs
+inname = 0
+def encode():
+    codecs.encode(inname,"rot_13")
 def main():
     st.header("Hello, World! :sunglasses:")
     st.header("This was made to make you :red[Annoy]")
