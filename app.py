@@ -1,12 +1,10 @@
 import streamlit as st
-import base64
+import codecs
 
-def decode(encoded_name):
-    # Decode Base64 to original name
-    encoded_bytes = encoded_name.encode('utf-8')  # Convert to bytes
-    decoded_bytes = base64.b64decode(encoded_bytes)  # Base64 decode
-    decoded_str = decoded_bytes.decode('utf-8')  # Convert bytes back to string
-    return decoded_str
+def encode(inname):
+    #st.write("works well")  # for test
+    encode= codecs.encode(inname,"rot_13")
+    return encode
 
 def main():
     st.header("Hello, World! :sunglasses:")
@@ -14,10 +12,12 @@ def main():
     st.header("Enjoy it! :smile:")
     st.header(":gray[If Its Possible] :smirk:")
 
+
+
 def INTRODUCTION():
     st.title("Hi,:hand: welcome to introduction")
     st.header("How To Play:")
-    st.subheader("Just Keep Play And Get Secret Code!")
+    st.subheader("Just Keep Play And Get Secret Code! ")
     st.write()
     st.header("In order to continue:")
     st.subheader("You have to memorize this")
@@ -27,27 +27,31 @@ def INTRODUCTION():
     st.subheader("I like to listen to music at exactly 50% volume")
     st.subheader("And My birthday is May 2nd, 2005!")
 
+
+
 def name():
     st.title("Hi :raised_hands: Nice To Meet You Whats Your Name?")
     
-    encoded_name = st.text_input("NAME:")
-    if encoded_name:
-        
-        decoded_name = decode(encoded_name)
-        if decoded_name != "hyunnn":
-            st.write("Your Name Is", decoded_name, "Right? Hmm...")
-        elif decoded_name == "hyunnn":
-            st.write(decoded_name)
+    inname=st.text_input("NAME:")
+    #st.write(inname)
+    if inname:
+        #st.write(inname)
+        encoded=encode(inname)
+        if encoded!="hyunnn":
+            st.write("Your Name Is",encoded,"Right? Hmm...")
+        elif encoded=="hyunnn":
             st.write("Hello hyunnn! First Key Is 'K'")
-#Base64 encoded string for 'hyunnn': aHl1bm5u
+
+
+
 def phone():
-    st.title("Can I Get Your Phone Number? :iphone:")
+    st.title("Can I Get Your Phone Number? :iphone:") 
 
 def birth():
-    st.title("Let's Have a Party On Your Birthday! :partying_face:")
+    st.title("Let's Have a Party On Your Birthday! :partying_face:") 
 
 def age():
-    st.title("How Old Are You? :smile:")
+    st.title("How Old Are You? :smile:")  
 
 def VOLUME():
     st.title("Is This Enough For The Volume? :loud_sound:")
@@ -74,4 +78,4 @@ elif page == "INTRODUCTION":
     INTRODUCTION()
 elif page == "NAME":
     name()
-#SECRET CODE: KIVEIRU
+#SECRET CODE: KIVEIRU 
