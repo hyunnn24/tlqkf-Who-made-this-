@@ -2,7 +2,8 @@ import streamlit as st
 
 def main():
     st.header("Hello, World! :sunglasses:")
-    st.header("This page was made to make you :red[angry] \n Please enjoy it!")
+    st.header("This was made to make you :yellow[Annoy]")
+    st.header("Enjoy it! :smile:")
 
 def phone():
     st.write("Phone Number Page")  # Placeholder content
