@@ -18,7 +18,8 @@ def INTRODUCTION():
     st.subheader("The phone number is 010 2535 4362(fake)")
     st.subheader("I like to listen to music at exactly 50% volume")
     st.subheader("And My birthday is May 2nd, 2005!")
-
+def name():
+    st.title("Hi :raised_hands: Nice To Meet You Whats Your Name?")
 def phone():
     st.title("Can I Get Your Phone Number? :iphone:") 
 
@@ -34,7 +35,7 @@ def VOLUME():
 def SECRET():
     st.title("Do You Want To Know The Secret? :lock:")
 
-page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","INTRODUCTION","PHONE NUMBER", "BIRTH DAY", "AGE","VOLUME","SECRET"])
+page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","NAME","INTRODUCTION","PHONE NUMBER", "BIRTH DAY", "AGE","VOLUME","SECRET"])
 st.sidebar.text("  made by hyunnn :kr: \n  CERT-IS PKNU \n  2024.08.13")
 
 if page == "PHONE NUMBER":
@@ -51,4 +52,6 @@ elif page == "SECRET":
     SECRET()
 elif page == "INTRODUCTION":
     INTRODUCTION()
+elif page == "NAME":
+    name()
 #SECRET CODE: KIVEIRU 
