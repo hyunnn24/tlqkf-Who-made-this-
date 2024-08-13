@@ -5,7 +5,13 @@ def main():
     st.header("This was made to make you :red[Annoy]")
     st.header("Enjoy it! :smile:")
     st.header(":gray[If Its Possible] :smirk:")
-    
+
+def INTRODUCTION():
+    st.title("Hi,:hand: welcome to introduction")
+    st.header("How To Play:")
+    st.subheader("Just Keep Play And Get Secret Code! ")
+    st.subheader("In order to continue")
+    st.subheader("You have to memorize this")
 def phone():
     st.title("Can I Get Your Phone Number? :iphone:") 
 
@@ -21,7 +27,7 @@ def VOLUME():
 def SECRET():
     st.title("Do You Want To Know The Secret? :lock:")
 
-page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE","VOLUME","SECRET"])
+page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","INTRODUCTION","PHONE NUMBER", "BIRTH DAY", "AGE","VOLUME","SECRET"])
 st.sidebar.text("  made by hyunnn :kr: \n  CERT-IS PKNU \n  2024.08.13")
 
 if page == "PHONE NUMBER":
@@ -36,5 +42,5 @@ elif page == "VOLUME":
     VOLUME()
 elif page == "SECRET":
     SECRET()
-
+elif page == "INTRODUCTION"
     #SECRET CODE: KIVEIRU 
