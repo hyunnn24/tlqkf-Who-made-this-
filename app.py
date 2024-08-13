@@ -42,5 +42,5 @@ elif page == "VOLUME":
     VOLUME()
 elif page == "SECRET":
     SECRET()
-elif page == "INTRODUCTION"
+elif page == "INTRODUCTION":
     #SECRET CODE: KIVEIRU 
