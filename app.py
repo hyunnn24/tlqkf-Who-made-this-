@@ -1,10 +1,12 @@
 import streamlit as st
-
+import codecs
 def main():
     st.header("Hello, World! :sunglasses:")
     st.header("This was made to make you :red[Annoy]")
     st.header("Enjoy it! :smile:")
     st.header(":gray[If Its Possible] :smirk:")
+
+
 
 def INTRODUCTION():
     st.title("Hi,:hand: welcome to introduction")
@@ -18,8 +20,13 @@ def INTRODUCTION():
     st.subheader("The phone number is 010 2535 4362(fake)")
     st.subheader("I like to listen to music at exactly 50% volume")
     st.subheader("And My birthday is May 2nd, 2005!")
+
+
+
 def name():
     st.title("Hi :raised_hands: Nice To Meet You Whats Your Name?")
+
+
 def phone():
     st.title("Can I Get Your Phone Number? :iphone:") 
 
