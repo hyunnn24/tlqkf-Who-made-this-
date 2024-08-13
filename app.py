@@ -2,7 +2,7 @@ import streamlit as st
 
 def main():
     st.header("Hello, World! :sunglasses:")
-    st.header("This was made to make you :yellow[Annoy]")
+    st.header("This was made to make you :red[Annoy]")
     st.header("Enjoy it! :smile:")
 
 def phone():
