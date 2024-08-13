@@ -3,7 +3,8 @@ import codecs
 
 def encode(inname):
     st.write("works well")
-    codecs.encode(inname,"rot_13")
+    encode= codecs.encode(inname,"rot_13")
+    st.write(encode)
 def main():
     st.header("Hello, World! :sunglasses:")
     st.header("This was made to make you :red[Annoy]")
