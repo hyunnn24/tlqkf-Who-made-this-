@@ -36,3 +36,5 @@ elif page == "VOLUME":
     VOLUME()
 elif page == "SECRET":
     SECRET()
+
+    #SECRET CODE: KIVEIRU 
