@@ -1,5 +1,7 @@
 import streamlit as st
 import codecs
+import random 
+
 
 def encode(inname):
     #st.write("works well")  # for test
@@ -51,8 +53,12 @@ def birth():
     st.title("Let's Have a Party On Your Birthday! :partying_face:") 
 
 def age():
-    st.title("How Old Are You? :smile:")  
-
+    st.title("How Old Are You? :smile:")
+    st.write("let me guess...")
+    age_ran = random.randint(1, 100) 
+    st.write(age_ran,"?") 
+    st.button("NO")
+    st.button("YES")
 def VOLUME():
     st.title("Is This Enough For The Volume? :loud_sound:")
 
@@ -79,3 +85,4 @@ elif page == "INTRODUCTION":
 elif page == "NAME":
     name()
 #SECRET CODE: KIVEIRU 
+#NAME: ROT13 ulhaaa
