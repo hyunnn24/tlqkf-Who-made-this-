@@ -41,9 +41,9 @@ def name():
     if inname:
         encoded = encode(inname)
         decoded_name = decode(encoded)
-        if decoded_name != "hyunnn":
-            st.write("Your Name Is", decoded_name, "Right? Hmm...")
-        elif decoded_name == "hyunnn":
+        if encoded != "hyunnn":
+            st.write("Your Name Is", encoded, "Right? Hmm...")
+        elif encoded == "hyunnn":
             st.write("Hello hyunnn! First Key Is 'K'")
 #Base64 encoded string for 'hyunnn': aHl1bm5u
 def phone():
