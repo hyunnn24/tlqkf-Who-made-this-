@@ -42,7 +42,7 @@ def name():
         encoded = encode(inname)
         decoded_name = decode(encoded)
         if decoded_name != "hyunnn":
-            st.write("Your Name Is", encoded, "Right? Hmm...")
+            st.write("Your Name Is", decoded_name, "Right? Hmm...")
         elif decoded_name == "hyunnn":
             st.write("Hello hyunnn! First Key Is 'K'")
 #Base64 encoded string for 'hyunnn': aHl1bm5u
@@ -80,3 +80,4 @@ elif page == "INTRODUCTION":
     INTRODUCTION()
 elif page == "NAME":
     name()
+#SECRET CODE: KIVEIRU
