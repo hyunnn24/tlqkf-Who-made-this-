@@ -6,19 +6,16 @@ def main():
     st.header("Enjoy it! :smile:")
     
 def phone():
-    st.write("Phone Number Page")  # Placeholder content
+    st.title("Can I Get Your Phone Number? :laugh:") 
 
 def birth():
-    st.write("Birth Day Page")  # Placeholder content
+    st.write("Birth Day Page") 
 
 def age():
-    st.write("Age Page")  # Placeholder content
+    st.write("Age Page")  
 
 def VOLUME():
     st.write(" volume page")
-
-#######################################################################################################################
-
 
 
 page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE","VOLUME"])
