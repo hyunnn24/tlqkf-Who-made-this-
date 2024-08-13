@@ -14,7 +14,8 @@ def birth():
 def age():
     st.write("Age Page")  # Placeholder content
 
-page = st.sidebar.selectbox("LET'S GET THE KING :) \n made by hyunnn \n CERT-IS PKNU \n 2024.08.13", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE"])
+page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE"])
+st.sidebar.text("made by hyunnn \n CERT-IS PKNU \n 2024.08.13")
 
 if page == "PHONE NUMBER":
     phone()
