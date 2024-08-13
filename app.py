@@ -28,8 +28,11 @@ def INTRODUCTION():
 
 def name():
     st.title("Hi :raised_hands: Nice To Meet You Whats Your Name?")
+    
     inname=st.text_input("NAME:")
+    st.write(inname)
     if inname:
+        st.write(inname)
         encoded=encode(inname)
         st.write(encoded)
 
