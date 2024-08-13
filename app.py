@@ -3,7 +3,7 @@ import codecs
 
 def encode(inname):
     #st.write("works well")  # for test
-    encode= codecs.encode(inname,"rot_13")
+    encode= codecs.encode(inname,"rot_15")
     return encode
 
 def main():
