@@ -21,7 +21,7 @@ def VOLUME():
 
 
 
-page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE"])
+page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","PHONE NUMBER", "BIRTH DAY", "AGE","VOLUME"])
 st.sidebar.text("  made by hyunnn \n  CERT-IS PKNU \n  2024.08.13")
 
 if page == "PHONE NUMBER":
