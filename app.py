@@ -4,7 +4,8 @@ def main():
     st.header("Hello, World! :sunglasses:")
     st.header("This was made to make you :red[Annoy]")
     st.header("Enjoy it! :smile:")
-
+    st.write()
+    st.write("made by hyunnn CERT-IS PKNU 2024.08.13")
 def phone():
     st.write("Phone Number Page")  # Placeholder content
 
