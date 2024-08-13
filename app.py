@@ -1,13 +1,6 @@
 import streamlit as st
 import base64
 
-def encode(inname):
-    # Encode input name to Base64
-    inname_bytes = inname.encode('utf-8')  # Convert to bytes
-    encoded_bytes = base64.b64encode(inname_bytes)  # Base64 encode
-    encoded_str = encoded_bytes.decode('utf-8')  # Convert bytes back to string
-    return encoded_str
-
 def decode(encoded_name):
     # Decode Base64 to original name
     encoded_bytes = encoded_name.encode('utf-8')  # Convert to bytes
@@ -37,10 +30,10 @@ def INTRODUCTION():
 def name():
     st.title("Hi :raised_hands: Nice To Meet You Whats Your Name?")
     
-    inname = st.text_input("NAME:")
-    if inname:
-        encoded = encode(inname)
-        decoded_name = decode(encoded)
+    encoded_name = st.text_input("NAME:")
+    if encoded_name:
+        
+        decoded_name = decode(encoded_name)
         if decoded_name != "hyunnn":
             st.write("Your Name Is", decoded_name, "Right? Hmm...")
         elif decoded_name == "hyunnn":
