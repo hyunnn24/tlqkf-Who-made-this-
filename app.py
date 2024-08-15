@@ -61,7 +61,7 @@ def age():
     st.write(st.session_state.age_ran, "?") 
 
     if st.button("NO"):
-        st.session_state.age_ran = random.randint(1, 100)  # 새로운 랜덤 나이를 생성
+        st.session_state.age_ran = random.randint(17, 60)  # 새로운 랜덤 나이를 생성
 
     if st.button("YES"):
         if st.session_state.age_ran == 20:
