@@ -53,7 +53,7 @@ def birth():
     st.title("Let's Have a Party On Your Birthday! :partying_face:") 
 
 if "age_ran" not in st.session_state:
-    st.session_state.age_ran = random.randint(1, 100)
+    st.session_state.age_ran = random.randint(17, 80)
 
 def age():
     st.title("How Old Are You? :smile:")
