@@ -74,6 +74,11 @@ def VOLUME():
 
 def SECRET():
     st.title("Secret? :lock:")
+    key=st.text_input("Key:")
+    if key=="KIVEIRU":
+        st.write("Congratulation")
+    else:
+        st.write("That's not the Key")
 
 page = st.sidebar.selectbox("LET'S GET THE KING :)", ["MAIN","INTRODUCTION","NAME","PHONE NUMBER", "BIRTH DAY", "AGE","VOLUME","SECRET"])
 st.sidebar.text("  made by hyunnn :kr: \n  CERT-IS PKNU \n  2024.08.13")
