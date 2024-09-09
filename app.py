@@ -7,7 +7,7 @@ from openai import OpenAI
 
 #Open AI 
 def AI_CHAT():
-    print("HELLO")
+    st.write("HELLO")
 
 
 def encode(inname):
