@@ -3,6 +3,12 @@ import codecs
 import random 
 import openai
 
+from openai import OpenAI
+
+#Open AI 
+def AI_CHAT():
+
+
 def encode(inname):
     #st.write("works well")  # for test
     encode= codecs.encode(inname,"rot_13")
@@ -51,6 +57,12 @@ def phone():
 
 def birth():
     st.title("Let's Have a Party On Your Birthday! :partying_face:") 
+    
+    API=st.text_input("API:")
+    client = OpenAI(api_key=API)
+    if client:
+        AI_CHAT()
+
 
 if "age_ran" not in st.session_state:
     st.session_state.age_ran = random.randint(17, 60)
