@@ -7,6 +7,7 @@ from openai import OpenAI
 
 #Open AI 
 def AI_CHAT():
+    print("HELLO")
 
 
 def encode(inname):
@@ -57,7 +58,7 @@ def phone():
 
 def birth():
     st.title("Let's Have a Party On Your Birthday! :partying_face:") 
-    
+
     API=st.text_input("API:")
     client = OpenAI(api_key=API)
     if client:
