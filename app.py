@@ -1,7 +1,7 @@
 import streamlit as st
 import codecs
 import random 
-
+import openai
 
 def encode(inname):
     #st.write("works well")  # for test
