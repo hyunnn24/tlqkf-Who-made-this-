@@ -2,6 +2,7 @@ import streamlit as st
 import codecs
 import random 
 import openai
+import threading
 
 from openai import OpenAI
 
@@ -86,15 +87,16 @@ def phone():
         st.session_state.running = False
         st.experimental_rerun()
 
-    # 숫자 표시 루프 (자동 갱신)
-    if st.session_state.running:
-        for _ in range(100):
+    # 숫자 표시 루프 (비동기 스레드)
+    def update_digit():
+        while st.session_state.running:
             st.session_state.current_digit = random.randint(0, 9)
-            placeholder.markdown(f"# {st.session_state.current_digit}")
-            time.sleep(0.05)
             st.experimental_rerun()
-    else:
-        placeholder.markdown(f"# {st.session_state.current_digit}")
+
+    if st.session_state.running:
+        threading.Thread(target=update_digit).start()
+
+    placeholder.markdown(f"# {st.session_state.current_digit}")
 
     # 결과 표시
     st.markdown("## 고정된 숫자들:")
